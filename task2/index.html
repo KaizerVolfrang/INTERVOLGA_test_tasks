@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top-block"></div>
+    <div class="container">
+
+        <a href="#" class="button open-popup">Оставить заявку</a>
+
+    <div class="bottom-block"></div>
+
+
+    <div class="popup-bg">
+        <div class="popup">
+            <img class="close-popup" src="images/close.png" alt="">
+            <form action="">
+                <h3>Транспортные средства и водители</h3>
+                <label for="licensePlate">Гос-номер</label>
+                <input type="number" id="licensePlate" placeholder="Укажите гос-номер" required>
+                <label for="vehicle">Транспортное средство</label>
+                <input type="text"  id="vehicle" placeholder="Транспортное средство" required>
+                <label for="arrivalDate">Ориентировочная дата прибытия к покупателю</label>
+                <input type="date"  id="arrivalDate" placeholder="Дата*" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+
+                <h3>Данные о водителе</h3>
+
+                <label for="driverName" required>ФИО</label>
+                <input type="text"  id="driverName" placeholder="Укажите ФИО водителя" required>
+                <label for="passportSeries">Паспортные данные</label>
+                <div class="input-group" required>
+                    <input type="number" id="passportSeries" placeholder="Серия" required>
+                    <input type="number"  id="passportNumber" placeholder="Номер" required>
+                </div>
+                <label for="issuedBy">Кем выдан</label>
+                <input type="text" id="issuedBy"  placeholder="Кем выдан" required>
+                <label for="issueDate">Когда выдан</label>
+                <input type="date" id="date-issue" placeholder="Когда выдан" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+                <div class="button-container">
+                    <button class="btn btn-primary">Отправить</button>
+                    <button class="btn btn-secondary">Отменить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
